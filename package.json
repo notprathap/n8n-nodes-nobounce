@@ -1,0 +1,43 @@
+{
+  "name": "n8n-nodes-nobounce",
+  "version": "1.0.0",
+  "description": "Official n8n community node for NoBounce Email Validation & Bulk Verification API (https://nobounceapi.com) — 75% more affordable than ZeroBounce & NeverBounce.",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "nobounce",
+    "email-validation",
+    "email-verification",
+    "deliverability",
+    "zerobounce",
+    "neverbounce",
+    "kickbox"
+  ],
+  "license": "MIT",
+  "homepage": "https://nobounceapi.com/compare/n8n-email-validation",
+  "author": {
+    "name": "NoBounce API",
+    "email": "notprathap@gmail.com",
+    "url": "https://nobounceapi.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notprathap/n8n-nodes-nobounce.git"
+  },
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/NoBounceApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/NoBounce/NoBounce.node.js"
+    ]
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
